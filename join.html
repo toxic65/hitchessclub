@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join / Contact | HIT Chess Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Young+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+  <a class="brand" href="index.html">&#9822; HIT <span>Chess</span> Club</a>
+  <nav aria-label="Main"><ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="join.html" class="active">Join / Contact</a></li>
+  </ul></nav>
+</div></header>
+<div class="page-title"><div class="wrap"><h1>Join / Contact Us</h1><p>Fill in the form and a committee member will reply within a few days.</p></div></div>
+<section><div class="wrap">
+  <form id="join-form" action="join.php" method="post" novalidate>
+    <fieldset>
+      <legend>I want to&hellip;</legend>
+      <div class="radio-row">
+        <label><input type="radio" name="type" value="join" checked> Join the club</label>
+        <label><input type="radio" name="type" value="contact"> Ask a question</label>
+      </div>
+    </fieldset>
+
+    <label for="name">Full name</label>
+    <input type="text" id="name" name="name" autocomplete="name">
+    <p class="err" id="err-name"></p>
+
+    <label for="regno">Student registration number</label>
+    <input type="text" id="regno" name="regno">
+    <p class="err" id="err-regno"></p>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" autocomplete="email">
+    <p class="err" id="err-email"></p>
+
+    <label for="phone">Phone (optional)</label>
+    <input type="tel" id="phone" name="phone" autocomplete="tel">
+    <p class="err" id="err-phone"></p>
+
+    <label for="level">Chess level</label>
+    <select id="level" name="level">
+      <option value="">Choose one</option>
+      <option>Beginner</option><option>Intermediate</option><option>Advanced</option>
+    </select>
+    <p class="err" id="err-level"></p>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+    <p class="err" id="err-message"></p>
+
+    <p><button class="btn" type="submit">Send</button></p>
+  </form>
+</div></section>
+<footer><div class="wrap">
+  <p>&copy; 2026 HIT Chess Club &middot; Harare Institute of Technology, Harare, Zimbabwe</p>
+  <p>Questions? <a href="join.html">Contact the committee</a></p>
+</div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
